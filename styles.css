@@ -1,9 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
 :root {
-    --bright-orange: hsl(31, 77%, 52%);--darkcyan: hsl(184, 100%, 22%); --very-dark-cyan: hsl(179, 100%, 13%);
-    /* paragraphs */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%); 
+    --very-dark-cyan: hsl(179, 100%, 13%);
     --transparent-white: hsla(0, 0%, 100%, 0.75); 
-    /* background, headings, buttons */
     --light-gray: hsl(0, 0%, 95%)
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button {
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+p { 
+    font-size: 15px; 
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.75;
+}
+
+h3 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 40px;
+}
+
+.btn {
+    background-color: var(white);
+    border: solid white 2px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn1 {
+    color: var(--bright-orange);
+}
+
+.btn2 {
+    color: var(--dark-cyan);
+}
+
+.btn3 {
+    color: var(--very-dark-cyan);
+}
+
+.bright-orange {
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.dark-cyan {
+    background-color: var(--dark-cyan);
+}
+
+.very-dark-cyan {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.column {
+    flex: 1;
+    padding: 30px;
+    color: var(--transparent-white);
+}
+
+.column img {
+    margin-bottom: 25px;
+}
+
+.column h3 {
+    margin-bottom: 20px;
+}
+
+.column p {
+    margin-bottom: 30px;
+}
+
+
+
+.container {
+    padding: 20px;
+}
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+s
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 600px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 915px;
+        margin: auto;
+    }
+    .bright-orange {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .very-dark-cyan {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .column {
+        padding: 40px;
+    }
+
+    .column p {
+        margin-bottom: 90px;
+    }
+
+        .column h3 {
+            margin-bottom: 30px;
+        }
+}
+
